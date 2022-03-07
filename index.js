@@ -12,6 +12,6 @@ mongoose.connect(config.MONGOODB_URL, (err) => {
   console.log('connected to db successfully')
 })
 
-app.listen(3000, () => {
-  console.log('serving running on 3000')
+app.listen(process.env.PORT || 3000, () => {
+  console.log('server running')
 })
