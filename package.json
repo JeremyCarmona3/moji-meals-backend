@@ -2,5 +2,30 @@
   "dependencies": {
     "express": "^4.17.3",
     "mongoose": "^6.2.4"
+  },
+  "name": "moji-meals-backend",
+  "version": "1.0.0",
+  "description": "backend for moji-meals app",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyCarmona3/moji-meals-backend.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Jeremy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremyCarmona3/moji-meals-backend/issues"
+  },
+  "homepage": "https://github.com/JeremyCarmona3/moji-meals-backend#readme",
+  "engines": {
+    "node": "14.x"
   }
 }
