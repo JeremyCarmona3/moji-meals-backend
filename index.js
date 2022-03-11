@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const recepieRouter = require('./routes/moji');
 
 const config = require('./config')
 
@@ -12,6 +13,8 @@ mongoose.connect(config.MONGOODB_URL, (err) => {
   console.log('connected to db successfully')
 })
 
+app.use(recepieRouter)
 app.listen(process.env.PORT || 3000, () => {
-  console.log('server running')
+console.log('server running')
+
 })
