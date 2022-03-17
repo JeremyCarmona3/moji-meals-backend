@@ -17,7 +17,8 @@ const RecipesSchema = new Schema({
   ingred3: String,
   ingred4: String,
   ingred5: String,
-  ingred6: String
+  ingred6: String,
+  emoji1:String
 });
 
 
