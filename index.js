@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const recepieRouter = require('./routes/moji')
+const userRouter = require('./routes/user')
 const config = require('./config')
 
 app.use(express.json())
@@ -25,6 +26,8 @@ app.use(function (req, res, next) {
 
 
 app.use(recepieRouter)
+app.use(userRouter)
+
 app.listen(process.env.PORT || 3001, () => {
   console.log('serving running on 3001')
 })
