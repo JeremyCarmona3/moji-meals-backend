@@ -14,7 +14,6 @@ mongoose.connect(config.MONGOODB_URL, (err) => {
 
 // Add headers
 app.use(function (req, res, next) {
-
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
@@ -25,6 +24,6 @@ app.use(function (req, res, next) {
 
 
 app.use(recepieRouter)
-app.listen(process.env.PORT || 3001, () => {
-  console.log('serving running on 3001')
+app.listen(process.env.PORT || 3002, () => {
+  console.log('serving running on 3002')
 })
