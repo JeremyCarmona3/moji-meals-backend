@@ -9,7 +9,6 @@ const signup = (req, res) => {
 
   user.save((err, done) => {
     if (err) return res.status(500).send("Signup failed")
-    console.log(err)
     res.status(201).send("Signed up successfully")
   })
 }
