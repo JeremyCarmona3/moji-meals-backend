@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
+const config = require('../config')
 
 const signup = (req, res) => {
   const user = new User()
@@ -17,7 +18,7 @@ const login = (req, res) => {
   User.findOne({email: req.body.email}, (err, user) => {
     if (err || !user) return res.status(404).send("User not found")
     if (user.comparePassword(req.body.password)) {
-      const token = jwt.sign({ id: user._id }, 'thisismysecret');
+      const token = jwt.sign({ id: user._id }, config.SECRET);
       res.send(token)
     } else {
       res.send("Could not login")
