@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const recepieRouter = require('./routes/moji')
+const recepieRouter = require('./routes/recipes')
 const userRouter = require('./routes/user')
 const config = require('./config')
 
