@@ -5,6 +5,8 @@ const config = require('../config')
 const signup = (req, res) => {
   const user = new User()
 
+  user.firstname = req.body.firstname
+  user.lastname = req.body.lastname
   user.email = req.body.email
   user.password = req.body.password
 

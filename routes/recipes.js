@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes,getRecipe,getRecipebyID } = require('../controller/moji')
+const { getRecipes,getRecipe,getRecipebyID } = require('../controller/recipes')
 const authorizeUser = require('../auth/auth') 
 
 router.get('/findRecipe', authorizeUser, getRecipes)

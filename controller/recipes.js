@@ -1,5 +1,5 @@
 // add stuff here
-const recipes = require('../models/moji')
+const recipes = require('../models/recipes')
 
 const getRecipes = (req, res) => {
   recipes.find({},(err, data) => {
