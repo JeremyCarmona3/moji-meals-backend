@@ -16,6 +16,9 @@ const RecipesSchema = new Schema({
   step2: String,
   step3: String,
   step4: String,
+  ingred: { type: [String], default: ["Ingredients"]},
+  prep: { type: [String], default: ["Notes"]},
+  step: { type: [String], default: ["Recipe Steps"]},
 });
 
 
