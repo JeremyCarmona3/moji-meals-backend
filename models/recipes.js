@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const RecipesSchema = new Schema({
-  image: { type: String, required },
-  title: { type: String, required },
+  image: { type: String },
+  title: { type: String },
   ingred: { type: [String], default: []},
   prep: { type: [String], default: []},
   step: { type: [String], default: []},
