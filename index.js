@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const recepieRouter = require('./routes/recipes')
 const userRouter = require('./routes/user')
 const config = require('./config')
+const cors = require('cors');
 
 app.use(express.json())
 
@@ -22,7 +23,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-
+app.use(cors());
 
 app.use(recepieRouter)
 app.use(userRouter)
